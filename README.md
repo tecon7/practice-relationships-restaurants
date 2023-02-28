@@ -21,3 +21,41 @@
   - Restaurants should be initialized with a name (string)
 - `Restaurant get_name()`
   - returns the restaurant's name
+
+#### Review
+
+- `Review __init__(self, customer, restaurant, rating)`
+  - Reviews should be initialized with a customer (Customer), restaurant (Restaurant), and a rating (int)
+- `Review rating()`
+  - returns the rating for a restaurant
+
+### Object Relationship Methods
+
+#### Customer
+- `Customer get_reviews()`
+  - returns the list of `Review` objects associated with the `Customer` instance
+- `Customer add_review(restaurant, rating)`
+  - creates a new `Review` objects with the given rating and adds it to both the `Customer` instance and the `Restaurant` object
+
+#### Restaurant
+- `Restaurant get_reviews()`
+  - returns the list of `Review` objects associated with the `Restaurant` instance
+- `Restaurant get_customers()`
+  - returns the list of `Customer` objects associated with the `Restaurant` insance
+
+#### Review
+- `Review get_restaurant()`
+  - returns the `Restaurant` object associated with the `Review` instance
+- `Review get_customer()`
+  - returns the `Customer` object associated with the `Review` instance
+
+### Aggregate and Association Methods
+
+#### Customer
+- `Customer review_count()`
+  - returns the total number of reviews associated with the `Customer` instance
+
+#### Restaurant
+- `Restaurant average_rating()`
+  - returns the average rating for the `Restaurant` instance
+  - HINT: can calculate the average by adding up all the ratings and diviging by the total number of ratings
