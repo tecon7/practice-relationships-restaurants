@@ -14,3 +14,10 @@
   - returns the customer's last name
 - `Customer full_name()`
   - returns the full name of the customer
+
+#### Restaurant
+
+- `Restaurant __init__(self, name)`
+  - Restaurants should be initialized with a name (string)
+- `Restaurant get_name()`
+  - returns the restaurant's name
