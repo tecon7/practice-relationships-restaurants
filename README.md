@@ -26,7 +26,7 @@
 
 - `Review __init__(self, customer, restaurant, rating)`
   - Reviews should be initialized with a customer (Customer), restaurant (Restaurant), and a rating (int)
-- `Review rating()`
+- `Review get_rating()`
   - returns the rating for a restaurant
 
 ### Object Relationship Methods
