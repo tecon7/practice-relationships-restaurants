@@ -40,8 +40,6 @@
 #### Restaurant
 - `Restaurant get_reviews()`
   - returns the list of `Review` objects associated with the `Restaurant` instance
-- `Restaurant get_customers()`
-  - returns the list of `Customer` objects associated with the `Restaurant` insance
 
 #### Review
 - `Review get_restaurant()`
